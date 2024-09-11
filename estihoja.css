@@ -1,0 +1,164 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 40px;
+    background-image: linear-gradient(135deg, #00796b, #004d40);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #004d40;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+/* Contenedor */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Efecto de animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Titulos con iconos */
+h2 {
+    border-bottom: 2px solid #00796b;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #333;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+h2 i {
+    margin-right: 10px;
+    color: #00796b;
+}
+
+/* Datos Personales */
+.datos-personales img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.datos-personales video:hover { 
+    scale: 100;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+li {
+    margin: 15px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+strong {
+    color: #00796b;
+}
+
+/* Estilos para los iconos */
+i.fas {
+    color: #004d40;
+    font-size: 1.5em;
+}
+
+/* Diseño de cuadrícula para pantallas grandes */
+@media (min-width: 768px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+
+    .datos-personales img {
+        grid-column: span 2;
+        margin: 0 auto;
+    }
+}
+/* Estilos para la tabla de referencias personales */
+table {
+    width: 150%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.1em;
+    background-color: #f9f9f9;
+}
+
+thead {
+    background-color: #00796b;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #004d40;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+td {
+    color: #555;
+}
+
+tr:hover {
+    background-color: #e0f7fa;
+}
